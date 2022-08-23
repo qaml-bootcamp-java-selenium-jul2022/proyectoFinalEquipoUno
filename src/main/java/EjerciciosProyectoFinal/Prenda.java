@@ -31,8 +31,8 @@ public abstract class Prenda {
         mapaEstadosDeMexico.put(EstadosDeMexico.SINALOA,"Noroeste");
         mapaEstadosDeMexico.put(EstadosDeMexico.NUEVO_LEON,"Noreste");
         mapaEstadosDeMexico.put(EstadosDeMexico.QUINTANA_ROO,"Region Sureste");
+        mapaEstadosDeMexico.put(EstadosDeMexico.AGUASCALIENTES,"Region centro");
 
-        mapaEstadosDeMexico.get(EstadosDeMexico.AGUASCALIENTES);
 
         return mapaEstadosDeMexico.get(regionEstadoMexico);
     }
