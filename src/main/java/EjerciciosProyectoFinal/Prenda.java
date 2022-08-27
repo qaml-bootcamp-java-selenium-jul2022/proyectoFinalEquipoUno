@@ -9,13 +9,14 @@ import java.util.TreeMap;
 
 public abstract class Prenda {
     public String tipoDePrenda;
-    public String categoriaPrenda;
+    public CategoriaPrenda categoriaPrenda;
     public Integer costoProduccion;
     public Integer costoRenta;
     public Integer costoVenta;
     public EstadosDeMexico estadoMexicoPrenda;
 
-    public Prenda(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, String categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta){
+
+    public Prenda(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, CategoriaPrenda categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta){
         this.tipoDePrenda = tipoDePrenda;
         this.estadoMexicoPrenda = estadoMexicoPrenda;
         this.categoriaPrenda = categoriaPrenda;
@@ -24,6 +25,11 @@ public abstract class Prenda {
         this.costoVenta = costoVenta;
 
     }
+
+    public Prenda() {
+
+    }
+
     public String regionEstadoDeMexico(EstadosDeMexico regionEstadoMexico) {
         Map<EstadosDeMexico, String> mapaEstadosDeMexico = new TreeMap<>();
         mapaEstadosDeMexico.put(EstadosDeMexico.CIUDAD_DE_MEXICO,"Region Centro");
@@ -37,7 +43,8 @@ public abstract class Prenda {
         return mapaEstadosDeMexico.get(regionEstadoMexico);
     }
 
-    public void imprimirInformacionPrenda(){
+
+    public void imprimirInformacionPrenda() {
 
     }
 }

@@ -3,7 +3,7 @@ package EjerciciosProyectoFinal;
 public class Zapato extends Prenda {
 
 
-    public Zapato(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, String categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
+    public Zapato(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, CategoriaPrenda categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
         super(tipoDePrenda, estadoMexicoPrenda, categoriaPrenda, costoProduccion, costoRenta, costoVenta);
 
     }

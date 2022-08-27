@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class PantalonTest {
     String tipoDePrendaEsperada = "pantalon";
     EstadosDeMexico estadoMexicoPrendaEsperada = EstadosDeMexico.AGUASCALIENTES;
-    String categoriaPrendaEsperada = "comun";
+    CategoriaPrenda categoriaPrendaEsperada = CategoriaPrenda.PRENDA_GALA;
     Integer costoProduccionEsperada = 45;
     Integer costoRentaEsperada = 25;
     Integer costoVentaEsperada = 60;

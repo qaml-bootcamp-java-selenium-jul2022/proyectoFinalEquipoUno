@@ -1,7 +1,7 @@
 package EjerciciosProyectoFinal;
 
 public class Pantalon extends Prenda {
-    public Pantalon(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, String categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
+    public Pantalon(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, CategoriaPrenda categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
         super(tipoDePrenda, estadoMexicoPrenda, categoriaPrenda, costoProduccion, costoRenta, costoVenta);
     }
 

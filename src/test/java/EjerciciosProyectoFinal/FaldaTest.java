@@ -9,7 +9,7 @@ class FaldaTest {
 
     String tipoDePrendaEsperada = "Falda";
     EstadosDeMexico estadoMexicoPrendaEsperada = EstadosDeMexico.NAYARIT;
-    String categoriaPrendaEsperada = "Gala";
+    CategoriaPrenda categoriaPrendaEsperada = CategoriaPrenda.PRENDA_GALA;
     Integer costoProduccionEsperada = 40;
     Integer costoRentaEsperada = 30;
     Integer costoVentaEsperada = 80;
