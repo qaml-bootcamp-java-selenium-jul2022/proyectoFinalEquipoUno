@@ -4,7 +4,7 @@ import java.util.Map;
 
 public class Sombrero extends Prenda{
 
-    public Sombrero(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, String categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
+    public Sombrero(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, CategoriaPrenda categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
         super(tipoDePrenda, estadoMexicoPrenda, categoriaPrenda, costoProduccion, costoRenta, costoVenta);
     }
 

@@ -8,7 +8,7 @@ class SombreroTest {
 
     String tipoPrendaEsperado = "Sombrero";
     EstadosDeMexico estadoMexicoPrendaEsperado = EstadosDeMexico.NUEVO_LEON;
-    String categoriaPrendaEsperado = "Gala";
+    CategoriaPrenda categoriaPrendaEsperado = CategoriaPrenda.PRENDA_COMUN;
     Integer costoProduccionEsperado = 10;
     Integer costoRentaEsperado = 15;
     Integer costoVentaEsperado = 20;

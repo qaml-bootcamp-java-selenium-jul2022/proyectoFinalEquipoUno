@@ -2,7 +2,7 @@ package EjerciciosProyectoFinal;
 
 public class Falda extends Prenda {
 
-    public Falda(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, String categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
+    public Falda(String tipoDePrenda, EstadosDeMexico estadoMexicoPrenda, CategoriaPrenda categoriaPrenda, Integer costoProduccion, Integer costoRenta, Integer costoVenta) {
         super(tipoDePrenda, estadoMexicoPrenda, categoriaPrenda, costoProduccion, costoRenta, costoVenta);
     }
     @Override
