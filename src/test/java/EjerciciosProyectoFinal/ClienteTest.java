@@ -17,11 +17,15 @@ class ClienteTest {
         @Test
         void imprimirInformacionCliente(){
                // cliente1.imprimirInformacionCliente();
-                Assertions.assertEquals(nombreClienteEsperado,cliente1.nombreCliente);
+                Assertions.assertEquals(nombreClienteEsperado,cliente1.getNombreCliente());
         }
         @Test
         void imprimirInformacionClienteNegativo(){
                 // cliente1.imprimirInformacionCliente();
-                Assertions.assertNotEquals("Roberto", cliente1.nombreCliente);
+                Assertions.assertNotEquals("Roberto", cliente1.getNombreCliente());
+        }
+        @Test
+        void setCorreoElectronico(){
+                cliente1.setCorreoElectronico("mamamia@gmail.com");
         }
 }

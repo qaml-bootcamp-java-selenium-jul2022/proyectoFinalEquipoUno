@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class VentaTest {
-    Venta ventaTest = new Venta("NombreVentaTest", "direccion de Prueba venta", "3344556677", true, "correoTest@gmail.com", PagoElectronico.TRANSFERENCIA);
+    Venta ventaTest = new Venta("NombreVentaTest", "direccion de Prueba venta", "3344556677", true, "correoTest@amail.com", PagoElectronico.TRANSFERENCIA);
 
     Prenda zapato1 = new Zapato("Zapato", EstadosDeMexico.SINALOA, CategoriaPrenda.PRENDA_COMUN, 1000, 200, 2500);
     Prenda blusa1 = new Blusa("Blusa", EstadosDeMexico.NAYARIT, CategoriaPrenda.PRENDA_GALA, 1000, 200, 2500);
@@ -22,7 +22,7 @@ class VentaTest {
             ventaTest.totalCostoVenta = ventaTest.totalCostoVenta + prendaEnRenta.costoVenta;
         }
 
-        Assert.assertEquals(expectedClienteNombre,ventaTest.cliente.nombreCliente);
+        Assert.assertEquals(expectedClienteNombre,ventaTest.cliente.getNombreCliente());
         Assert.assertEquals(expectedTotalVenta, ventaTest.totalCostoVenta);
     }
 }

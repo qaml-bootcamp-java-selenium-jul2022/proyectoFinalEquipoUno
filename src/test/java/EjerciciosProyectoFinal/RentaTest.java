@@ -23,7 +23,7 @@ class RentaTest {
             rentaTest.totalCostoRenta = rentaTest.totalCostoRenta + prendaEnRenta.costoRenta;
         }
 
-        Assert.assertEquals(expectedClienteNombre,rentaTest.cliente.nombreCliente);
+        Assert.assertEquals(expectedClienteNombre,rentaTest.cliente.getNombreCliente());
         Assert.assertEquals(expectedTotalRenta, rentaTest.totalCostoRenta);
     }
 }

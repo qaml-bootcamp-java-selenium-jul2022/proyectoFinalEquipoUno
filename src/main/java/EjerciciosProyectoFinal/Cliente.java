@@ -1,12 +1,67 @@
 package EjerciciosProyectoFinal;
 
 public class Cliente {
-    public String nombreCliente = "alvaro";
-    public String direccionCliente = "Calle primera #1546";
-    public String telefonoCliente = "+526671825514";
-    public boolean clienteRegistrado = true;
-    public String correoElectronico = "alvmmn@gmail.com";
-    public PagoElectronico pagoElectronico;
+    private String nombreCliente = "alvaro";
+
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+
+    public String getDireccionCliente() {
+        return direccionCliente;
+    }
+
+    public void setDireccionCliente(String direccionCliente) {
+        this.direccionCliente = direccionCliente;
+    }
+
+    public String getTelefonoCliente() {
+        return telefonoCliente;
+    }
+
+    public void setTelefonoCliente(String telefonoCliente) {
+        this.telefonoCliente = telefonoCliente;
+    }
+
+    public boolean isClienteRegistrado() {
+        return clienteRegistrado;
+    }
+
+    public void setClienteRegistrado(boolean clienteRegistrado) {
+        this.clienteRegistrado = clienteRegistrado;
+    }
+
+    public String getCorreoElectronico() {
+        return correoElectronico;
+    }
+
+    public void setCorreoElectronico(String correoElectronico) {
+        if(correoElectronico.endsWith("@gmail.com")||correoElectronico.endsWith("@hotmail.com")){
+            this.correoElectronico = correoElectronico;
+        }
+        else{
+            System.out.println("El correo electronico es invalido.");
+        }
+
+    }
+
+    public PagoElectronico getPagoElectronico() {
+        return pagoElectronico;
+    }
+
+    public void setPagoElectronico(PagoElectronico pagoElectronico) {
+        this.pagoElectronico = pagoElectronico;
+    }
+
+    private String direccionCliente = "Calle primera #1546";
+    private String telefonoCliente = "+526671825514";
+    private boolean clienteRegistrado = true;
+    private String correoElectronico = "alvmmn@gmail.com";
+    private PagoElectronico pagoElectronico;
 
     public Cliente(String nombreCliente, String direccionCliente, String telefonoCliente, boolean clienteRegistrado,String correoElectronico, PagoElectronico pagoElectronico){
         this.nombreCliente = nombreCliente;
